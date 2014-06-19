@@ -1,0 +1,29 @@
+{
+  "tileSize" : 256,
+  "database" : {
+    "host": "localhost",
+    "user": "username",
+    "password": "password",
+    "database": "database-name"
+  },
+  "prefix" : "db_table_prefix",
+  "vtiledir" : "path/to/vtiledir",
+  "tiledir" : "path/to/tiledir",
+  "expiredtilesdir" : "path/to/expiredtilesdir",
+  "scriptdir" : "path/to/kothic-js/src",
+  "styledir" : "path/to/your-converted-mapcss",
+  "zoomOffset" : 0,
+  "minZoom" : 0,
+  "maxZoom" : 20,
+  "styles" : ["style1", "style2"],
+  "intscalefactor" : 10000,
+  "geomcolumn" : "way",
+  "pxtolerance" : 1.8,
+  "maxPrerender" : 8,
+  "maxCached" : 16,
+  "minExpiring" : 8,
+  "maxsockets" : 100,
+  "tileserverPort" : 9000,
+  "tileBoundTolerance" : 20,
+  "filterconditions" : {}
+}
