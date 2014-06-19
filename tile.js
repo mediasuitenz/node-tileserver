@@ -366,7 +366,12 @@ Tile.prototype =
 		var bbox_p = this.from4326To900913(bbox);
 		var zoom = this.z+configuration.zoomOffset;
 
-		var connection = "postgres://postgres@localhost/"+configuration.database;
+		var connection;
+		if (typeof configuration.database === 'string') {
+			connection = "postgres://postgres@localhost/"+configuration.database;
+		} else {
+			connection = configuration.database;
+		}
 		var client = new pg.Client(connection);
 
 		this.debug('Connecting to database '+connection+'...');
